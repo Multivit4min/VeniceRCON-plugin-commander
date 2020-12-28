@@ -1,0 +1,11 @@
+name: "Commander"
+description: "simple tool to manage commands"
+author: "Multivitamin <david.kartnaller@gmail.com>"
+version: "1.0.0"
+backend: "BF3"
+entry: "lib/index.js"
+vars:
+  - name: "prefix"
+    description: "chat command prefix"
+    type: "string"
+    default: "/"
