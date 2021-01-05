@@ -27,6 +27,8 @@ jobs:
         run: rm -R node_modules
       - name: install production dependencies
         run: npm ci --only=prod
+      - name: clean files
+        run: rm -R .gitignore .github src types tsconfig.json
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
