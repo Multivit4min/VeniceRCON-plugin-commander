@@ -1,0 +1,28 @@
+{
+  "name": "venicercon-plugin-commander",
+  "version": "1.0.0",
+  "description": "commander plugin for VeniceRCON",
+  "main": " ",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.14.20",
+    "typescript": "^4.1.3",
+    "vu-rcon": "^1.5.5"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Multivit4min/VeniceRCON-plugin-commander.git"
+  },
+  "author": "Multivitamin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Multivit4min/VeniceRCON-plugin-commander/issues"
+  },
+  "homepage": "https://github.com/Multivit4min/VeniceRCON-plugin-commander#readme"
+}
