@@ -41,10 +41,10 @@ export class CommandManager {
     this.add("help").execute(async ({ invoker, reply }) => {
       const useable: Command[] = []
       await Promise.all(this.commands.map(async cmd => {
-        if (!cmd.isAllowed(invoker)) return
+        if (!await cmd.isAllowed(invoker)) return
         useable.push(cmd)
       }))
-      reply(useable.map(cmd => cmd.props.command).join(", "))
+      reply(`commands with prefix "${this.prefix}": ${useable.map(cmd => cmd.props.command).join(", ")}`)
     })
   }
 
@@ -105,6 +105,11 @@ export class CommandManager {
     const command = new Command(this).command(cmd)
     this.commands.push(command)
     return command
+  }
+
+  /** retrieves the current prefix for commands */
+  getPrefix() {
+    return this.prefix
   }
 
 }

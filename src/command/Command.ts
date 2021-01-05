@@ -9,7 +9,7 @@ export class Command {
 
   parent: CommandManager
   readonly props: Command.Props = {
-    command: "_",
+    command: "",
     help: false,
     scopes: [],
     enabled: true,

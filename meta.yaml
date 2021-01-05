@@ -1,5 +1,5 @@
 name: "Commander"
-description: "simple tool to manage commands"
+description: "simple library to manage commands"
 author: "Multivitamin <david.kartnaller@gmail.com>"
 version: "1.0.0"
 backend: "BF3"
